@@ -10,7 +10,7 @@ class Star extends React.Component {
       };
     }
    
-    onStarClick(nextValue) {
+    onStarClick(nextValue, prevValue, name) {
       console.log(nextValue)
       this.setState({rating: nextValue});
     }
