@@ -144,7 +144,7 @@ class DashboardPage extends React.Component {
         <h3 style={globalStyles.navigation} />
         <div className="row">
           <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 m-b-15">
-            <HeaderLace title="PAPAPAP"/>
+            <HeaderLace />
           </div>
         </div>
         

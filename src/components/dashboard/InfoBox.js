@@ -6,7 +6,7 @@ import {typography} from 'material-ui/styles';
 class InfoBox extends React.Component {
 
   render() {
-    const {color, title, Icon} = this.props;
+    const {color, Icon} = this.props;
 
     const styles = {
       content: {
@@ -41,11 +41,7 @@ class InfoBox extends React.Component {
           <Icon color={white}
                 style={styles.icon}
           />
-        </span>
-
-        <div style={styles.content}>
-          <span style={styles.text}>{title}</span>
-        </div>  
+        </span>  
       </Paper>
       );
   }
