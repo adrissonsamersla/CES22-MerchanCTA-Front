@@ -6,15 +6,19 @@ import {typography} from 'material-ui/styles';
 class InfoBox extends React.Component {
 
   render() {
-    const {color, Icon} = this.props;
+    const {color, title, Icon} = this.props;
 
     const styles = {
       content: {
-        padding: '5px 10px',
+        paddingLeft: 10,
+        paddingRight: 10,
+        paddingTop: 30,
         textAlign: 'center',
-        height: 80
+        height: 60
       },
       text: {
+        textAlign: 'center',
+        marginTop: 40,
         fontSize: 30,
         fontWeight: typography.fontWeightLight,
         color: grey800,
@@ -41,7 +45,11 @@ class InfoBox extends React.Component {
           <Icon color={white}
                 style={styles.icon}
           />
-        </span>  
+        </span>
+
+        <div style={styles.content}>
+          <span style={styles.text}>{title}</span>
+        </div>  
       </Paper>
       );
   }
